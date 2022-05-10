@@ -37,3 +37,4 @@ EOF
 
 systemctl daemon-reload
 systemctl enable Snirt
+systemctl start Snirt
