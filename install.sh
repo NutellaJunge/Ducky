@@ -38,4 +38,3 @@ EOF
 systemctl daemon-reload
 systemctl enable Snirt
 systemctl start Snirt
-docker container attach snirt_node
