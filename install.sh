@@ -14,12 +14,12 @@ EOF
 
 (cat << EOF
 [Unit]
-User=root
 Description=Snirt Service
 After=docker.service
 Requires=docker.service
 
 [Service]
+User=root
 TimeoutStartSec=0
 Restart=always
 ExecStartPre=-/usr/bin/docker exec %n stop
