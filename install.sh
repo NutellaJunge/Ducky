@@ -23,7 +23,6 @@ User=root
 TimeoutStartSec=0
 Restart=always
 ExecStop=/usr/bin/docker exec snirt_node kill -s SIGINT 1
-ExecStartPre=/usr/bin/docker login -u paulo5 -p a8Hk@L_~4m_8Zcb
 ExecStartPre=/usr/bin/docker image pull paulo5/snirt:node
 ExecStartPre=/usr/bin/docker image tag paulo5/snirt:node snirt_node
 ExecStartPre=/usr/bin/docker image prune -f
